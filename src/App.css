@@ -1,0 +1,142 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.button-delete {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #b1bdf3; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-delete:hover {
+  background-color: #6656f5; /* hover:bg-pink-500 */
+}
+
+.button-add {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #f9a8d4; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-add:hover {
+  background-color: #ec4899; /* hover:bg-pink-500 */
+}
+
+.button-edit {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #f79760; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-edit:hover {
+  background-color: #ec5348; /* hover:bg-pink-500 */
+}
+
+.head {
+  width: 100%;                 /* w-full */
+  background-color: #2563eb;   /* bg-blue-600 */
+  color: white;                /* text-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  position: fixed;             /* fixed */
+  top: 0;                      /* top-0 */
+  left: 0;                     /* left-0 */
+  z-index: 50;                 /* z-50 */
+}
+
+.text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* ของวิดีโอ*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  /* background-color: #000000cc; */
+}

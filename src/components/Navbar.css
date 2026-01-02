@@ -1,0 +1,97 @@
+.container {
+  max-width: 72rem;          /* max-w-6xl (6xl = 72rem = 1152px) */
+  margin-left: auto;         /* mx-auto */
+  margin-right: auto;        /* mx-auto */
+  display: flex;             /* flex */
+  justify-content: space-between; /* justify-between */
+  align-items: center;       /* items-center */
+  padding: 1rem;             /* p-4 */
+}
+
+.text {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.button-delete {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #b1bdf3; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-delete:hover {
+  background-color: #6656f5; /* hover:bg-pink-500 */
+}
+
+.button-add {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #f9a8d4; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-add:hover {
+  background-color: #ec4899; /* hover:bg-pink-500 */
+}
+
+.button-edit {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #f79760; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-edit:hover {
+  background-color: #ec5348; /* hover:bg-pink-500 */
+}
+
+.button-do {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #63c770; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-do:hover {
+  background-color: #03a111; /* hover:bg-pink-500 */
+}
+
+.button-home {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #7fd3e2; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-home:hover {
+  background-color: #30c4d8; /* hover:bg-pink-500 */
+}
+
+.head {
+  width: 100%;                 /* w-full */
+  background-color: #ba85dd;   /* bg-blue-600 */
+  color: white;                /* text-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+  position: fixed;             /* fixed */
+  top: 0;                      /* top-0 */
+  left: 0;                     /* left-0 */
+  z-index: 50;                 /* z-50 */
+}
+
+

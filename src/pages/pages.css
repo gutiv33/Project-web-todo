@@ -1,0 +1,97 @@
+
+
+.button-edit {
+  padding: 0.5rem 1rem;      /* py-2 px-4 */
+  background-color: #f79760; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+}
+
+.button-edit:hover {
+  background-color: #ec5348; /* hover:bg-pink-500 */
+}
+
+.button-addp {
+
+  display: flex;
+  align-items: center; /*จัดรูปแบบตัวอักษร*/
+  justify-content: center;/*จัดรูปแบบตัวอักษร*/
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto; /*จัดตัวปุ่มให้อยู่ตรงกลาง*/
+  padding: 1rem 1.5rem;      /* py-2 px-4 -> ขนาดตัวปุ่ม*/ 
+  background-color: #7febbe; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+   
+}
+.button-addp:hover {
+  background-color: #21b17a; /* hover:bg-pink-500 */
+}
+
+.button-editp {
+
+  display: flex;
+  align-items: center; /*จัดรูปแบบตัวอักษร*/
+  justify-content: center;/*จัดรูปแบบตัวอักษร*/
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto; /*จัดตัวปุ่มให้อยู่ตรงกลาง*/
+  padding: 0.5rem 1rem;      /* py-2 px-4 -> ขนาดตัวปุ่ม*/ 
+  background-color: #eb8585; /* bg-pink-300 */
+  color: white;              /* text-white */
+  border-radius: 0.375rem;   /* rounded-md */
+  border: 1px solid white;   /* border */
+  cursor: pointer;           /* ให้ cursor เป็น pointer */
+  transition: background-color 0.3s; /* ให้ hover smooth */
+   
+}
+.button-editp:hover {
+  background-color: #ec3140; /* hover:bg-pink-500 */
+}
+
+
+.text{
+  display: flex;
+  justify-content: center; /* จัดกลางแนวนอน */
+  margin-top: 100px;
+  font-family:"Changa One", sans-serif ;
+  /* align-items: center;     จัดกลางแนวตั้ง */
+}
+
+
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.henny-penny-regular {
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
