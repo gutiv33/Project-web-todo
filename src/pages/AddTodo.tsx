@@ -12,7 +12,7 @@ type AddTodoProps = {
 };
 
 export const AddTodo: React.FC<AddTodoProps> = ({ onSubmit }) => {
-  const { manager, refresh } = useTodo(); // ดึง manager และ refresh จาก context
+  const { manager, refresh,toDos } = useTodo(); // ดึง manager และ refresh จาก context
   const [text, setText] = useState("");
   const [dueDate, setDueDate] = useState<Date | null>(null);
 
@@ -58,6 +58,21 @@ export const AddTodo: React.FC<AddTodoProps> = ({ onSubmit }) => {
       <button onClick={handleAdd} className="button-addp">
         Add
       </button>
+
+      <h2 style={{marginTop:'100px'}}>List Todo</h2>
+            <ul>
+
+              {toDos.map(t =>(
+
+              <li key={t.id} >
+
+                [{t.id}] {t.text} -{t.dueDate} ({t.isDone() ? "Done" : "Isn't Done" })
+
+              </li>
+
+            ))}
+
+          </ul>
     </div>
   );
 };

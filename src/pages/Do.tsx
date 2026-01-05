@@ -8,7 +8,7 @@ type Props = {
 export const ListToDo: React.FC<Props> = ({ listTodo, onToggleDone }) => {
   return (
 
-    
+  <div> 
     <ul style={{marginTop:'100px'}}>
        <h3 className="text">DONE / ISN ' T DONE</h3>
       {listTodo.map(todo => (
@@ -35,5 +35,7 @@ export const ListToDo: React.FC<Props> = ({ listTodo, onToggleDone }) => {
         </li>
       ))}
     </ul>
+
+  </div>   
   );
 };

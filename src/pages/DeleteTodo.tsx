@@ -31,8 +31,24 @@ export const DeleteListTodo:React.FC<DeleteToDoProps> = ({
                     </li>    
                 ))}
             </ul>
+            <h2 style={{marginTop:'100px'}}>List Todo</h2>
+            <ul>
+
+              {listTodo.map(t =>(
+
+              <li key={t.id} >
+
+                [{t.id}] {t.text} -{t.dueDate} ({t.isDone() ? "Done" : "Isn't Done" })
+
+              </li>
+
+            ))}
+
+          </ul>
+        
         </div>
-    )
+        
+    )  
 }
     
 

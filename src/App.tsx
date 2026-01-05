@@ -6,14 +6,14 @@ import { DeleteListTodo } from './pages/DeleteTodo';
 import { EditToDo } from './pages/Edit';
 import {Navbar} from './components/Navbar'
 import { ListToDo } from './pages/Do';
-// import Home from './pages/Home';
+import Home from './pages/Home';
 
 
-type Panel =  "NONE"|"ADD" | "DELETE" |"EDIT" |"DO";//|"HOME"
+type Panel =  "ADD" | "DELETE" |"EDIT" |"DO"|"HOME";
 
 const App:React.FC = () => {
 
-    const [activePanel,setActivePanel] = useState<Panel>("NONE");
+    const [activePanel,setActivePanel] = useState<Panel>("HOME");
     const {manager,toDos,refresh} = useTodo();
     // {activePanel === "HOME" && <Home/>}
 
@@ -31,6 +31,8 @@ const App:React.FC = () => {
         <main style={{padding:"24px"}}>
           {/* <h2>TODO LIST</h2> */}
 
+          {activePanel === "HOME" && <Home/>}
+
           {activePanel === "DO" && (
             <ListToDo
               listTodo = {toDos}
@@ -39,14 +41,14 @@ const App:React.FC = () => {
                 refresh();
                 
 
-                setActivePanel("NONE")
+                // setActivePanel("HOME")
               }}
               />
           )}
           
           {activePanel === "ADD" && ( 
             <AddTodo 
-              onSubmit={() => setActivePanel("NONE")}
+              onSubmit={() => setActivePanel("DO")}
              />
           )}
 
@@ -56,7 +58,7 @@ const App:React.FC = () => {
               onSubmit={(id) => {
                 manager.deleteTodo(id);
                 refresh();
-                setActivePanel("NONE")
+                setActivePanel("DO")
               }}
               />
           )}
@@ -67,20 +69,20 @@ const App:React.FC = () => {
             onSubmit1={(id,text) => {
               manager.editText(id,text)
               refresh();
-              setActivePanel("NONE")
+              setActivePanel("DO")
             }}
             
             onSubmit2={(id,dueDate) => {
               manager.editDueDate(id,dueDate)
               refresh();
-              setActivePanel("NONE")
+              setActivePanel("DO")
             }}
             
             />
           )}
 
 
-         <div >
+         {/* <div >
         <h2 style={{marginTop:'100px'}}>List Todo</h2>
 
            <ul>
@@ -97,7 +99,7 @@ const App:React.FC = () => {
 
           </ul>
         
-    </div>
+    </div> */}
           
           
         </main>
@@ -108,21 +110,3 @@ const App:React.FC = () => {
 export default App
 
 
-//  <div >
-//         <h2 style={{marginTop:'100px'}}>List Todo</h2>
-
-//           <ul>
-
-//             {toDos.map(t =>(
-
-//               <li key={t.id} >
-
-//                 [{t.id}] {t.text} -{t.dueDate} ({t.isDone() ? "Done" : "Isn't Done" })
-
-//               </li>
-
-//             ))}
-
-//           </ul>
-        
-//     </div>
